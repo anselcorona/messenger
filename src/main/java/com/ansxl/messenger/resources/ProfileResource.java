@@ -18,9 +18,10 @@ import com.ansxl.messenger.services.ProfileService;
 
 @Path("/profiles")
 @Consumes(MediaType.APPLICATION_XML)
-@Produces(MediaType.APPLICATION_XML)
+@Produces(MediaType.APPLICATION_JSON)
 public class ProfileResource {
 	ProfileService profileService = new ProfileService();
+	
 	@GET
 	public List<Profile> getAllProfiles(){
 		return profileService.getAllProfiles();

@@ -14,9 +14,10 @@ import javax.ws.rs.core.MediaType;
 
 import com.ansxl.messenger.services.MessageService;
 import com.ansxl.messenger.model.Message;
+
 @Path("/messages")
 @Consumes(MediaType.APPLICATION_XML)
-@Produces(MediaType.APPLICATION_XML)
+@Produces(MediaType.APPLICATION_JSON)
 public class MessageResource {
 	
 	MessageService messageService = new MessageService();
