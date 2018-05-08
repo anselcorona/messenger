@@ -16,7 +16,7 @@ import com.ansxl.messenger.services.MessageService;
 import com.ansxl.messenger.model.Message;
 
 @Path("/messages")
-@Consumes(MediaType.APPLICATION_XML)
+@Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class MessageResource {
 	
