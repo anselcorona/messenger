@@ -11,8 +11,6 @@ import javax.ws.rs.core.MediaType;
 @Consumes(MediaType.APPLICATION_JSON)
 public class CommentResource {
 	
-	
-	
 	@GET
 	public String test(){
 		return "testwww";
