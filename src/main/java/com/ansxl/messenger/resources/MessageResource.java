@@ -11,7 +11,6 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.ansxl.messenger.services.MessageService;
@@ -58,6 +57,12 @@ public class MessageResource {
 	@Path("/{messageId}")
 	public void deleteMessage(@PathParam("messageId") long messageId){
 		messageService.removeMessage(messageId);
+	}
+	
+	@GET
+	@Path("/{messageId}/comments")
+	public CommentResource getCommentResource(){
+		return new CommentResource();
 	}
 	
 }
